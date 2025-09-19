@@ -9,7 +9,6 @@ def checkmate(board_str):
             print("Invalid board: Must contain exactly one King"); return
         x,y = k[0]
         atk = [(-1,-1),(-1,1)];   # Pawn
-        atk += [(-2,-1),(-2,1),(-1,-2),(-1,2),(1,-2),(1,2),(2,-1),(2,1)]  # Knight
         for dx,dy in atk:
             i,j = x+dx, y+dy
             if 0<=i<n and 0<=j<n:
