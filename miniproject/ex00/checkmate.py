@@ -13,7 +13,7 @@ def checkmate(board_str):
         for dx,dy in atk:
             i,j = x+dx, y+dy
             if 0<=i<n and 0<=j<n:
-                if (b[i][j]=='P' and dx==-1) or b[i][j]=='N':
+                if (b[i][j]=='P' and dx==-1) :
                     print("Success"); return
         for dx,dy,d in [(-1,0,'RQ'),(1,0,'RQ'),(0,-1,'RQ'),(0,1,'RQ'),
                         (-1,-1,'BQ'),(-1,1,'BQ'),(1,-1,'BQ'),(1,1,'BQ')]:
